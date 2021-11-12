@@ -10,6 +10,30 @@
 		<LinearGradientBrush EndPoint="0.0,0.0" StartPoint="0.0,1">
 			<GradientStop Color="#FF8888FF"/>
 			<GradientStop Color="#FFFF8888" Offset="1"/>
+			<GradientStop Color="#FFCB88BB" Offset="0.5"/>
 		</LinearGradientBrush>
 	</Window.Background>
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="0.5*"/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="1.5*"/>
+			<RowDefinition Height="0.4*"/>
+			<RowDefinition Height="0.3*"/>
+			<RowDefinition Height="0.4*"/>
+			<RowDefinition/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		<Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Foreground="#95de9a" FontSize="48" VerticalContentAlignment="Center" HorizontalAlignment="Center">Auto Edunet</Label>
+		<Label Grid.Row="1" Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24">ID:</Label>
+		<Rectangle Grid.Row="1" Grid.Column="1" Fill="Transparent" Stroke ="Black" StrokeThickness="1.5" Margin="0, 0, 20, 0"/>
+		<TextBox x:Name="inputID" Grid.Row="1" Grid.Column="1" Background="Transparent" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Margin="0, 0, 20, 0"></TextBox>
+		<Label Grid.Row="3" Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24">Password:</Label>
+		<Rectangle x:Name="inputPassword" Grid.Row="3" Grid.Column="1" Fill="Transparent" Stroke ="Black" StrokeThickness="1.5" Margin="0, 0, 20, 0"/>
+		<PasswordBox Grid.Row="3" Grid.Column="1" Background="Transparent" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Margin="0, 0, 20, 0"></PasswordBox>
+		<Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Background="Transparent" FontSize="32" Click="Button_Click">Login</Button>
+	</Grid>
 </Window>
+    

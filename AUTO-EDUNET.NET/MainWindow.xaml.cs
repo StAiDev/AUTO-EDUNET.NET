@@ -24,5 +24,10 @@ namespace AUTO_EDUNET.NET
 		{
 			InitializeComponent();
 		}
+
+		private void Button_Click(object sender, RoutedEventArgs e)
+		{
+			System.Console.WriteLine("Button Clicked with value" + inputID.Text + "    " + inputPassword.Parent);
+		}
 	}
 }
